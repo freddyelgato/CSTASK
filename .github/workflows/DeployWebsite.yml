@@ -18,3 +18,4 @@ jobs:
         with:
           push: true
           tags: 2424833f/cstask:latest
+          
