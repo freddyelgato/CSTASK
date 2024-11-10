@@ -1,61 +1,30 @@
-# CSTASK
+# CSTASK - Aplicación "Hola Mundo" en C#
 
-## Description  
-CSTASK is a simple C# application that starts an HTTP server and responds with "Hello World." It demonstrates the basics of building and deploying a C# application in Docker. This project is designed for ease of use, offering a quick setup for developers looking to experiment with Dockerized C# applications. It is accessible both online and locally through Docker, making it a great starting point for web app development in C#.
+Este proyecto es una simple aplicación web "Hola Mundo" creada en C# y desplegada en un contenedor Docker. Puedes ejecutarla localmente y acceder a ella en tu navegador.
 
-## Project Links  
-- **Deployed on Docker Hub**: [2424833f/cstask](https://hub.docker.com/repository/docker/2424833f/cstask)
-- **GitHub Repository**: [freddyelgato/CSTASK](https://github.com/freddyelgato/CSTASK)
-- **Live Demo**: You can access the demo of the app at [http://localhost:8080](http://localhost:8080) once it's running locally.
+## Requisitos
+- **Docker**: [Instalar Docker](https://www.docker.com/get-started) si aún no lo tienes.
 
-## Getting Started 🚀
+## Instrucciones de Instalación
 
-### Cloning the Repository  
-To clone the repository, use the following command:  
-`git clone https://github.com/freddyelgato/CSTASK.git`
+1. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/freddyelgato/CSTASK.git
+2. **Ejecuta la aplicación en Docker**:
+   ```bash
+   docker run -d -p 8080:8080 --name CSTASK 2424833f/cstask
+ - **d**: Ejecuta el Contenedor en Segundo Plano.
+ - **p8080**: Mapea el puerto 8080 del contenedor al puerto 8080 de tu máquina..
 
-### Navigate to the Project Directory  
-Change to the project directory:  
-`cd CSTASK`
+3. **Accede a la aplicación con el Navegador para ver el Mensaje Hola Mundo**:
+   ```bash
+   http://localhost:8080
+   
+## Comandos Útiles
+- Ver Contenedores: `docker ps`.
+- Detener el Contenedor: `docker stop CSTASK`.
+- Eliminar el Contenedor: `docker rm CSTASK`.
 
-### Building the Docker Image  
-To build the Docker image for the application, use the following command:  
-`docker build -t cstask .`
-
-### Running the Application with Docker  
-To run the application, execute:  
-`docker run -p 8080:8080 --name CSTASK cstask`  
-Once running, open your browser and visit [http://localhost:8080](http://localhost:8080) to view the "Hello World" message.
-
-## Features ✨  
-- Simple "Hello World" HTTP response.
-- Dockerized for easy deployment and portability.
-- Minimal setup for learning purposes.
-- Works locally or can be deployed through Docker Hub.
-
-## Advanced Usage 🌐  
-If you wish to run the container on a different port, simply modify the port mapping. For example, to run it on port 3000, use:  
-`docker run -p 3000:8080 --name CSTASK cstask`
-
-## Additional Commands 🔧  
-Here are some additional commands you might find useful:
-
-### Stopping the Container  
-To stop the running container, use:  
-`docker stop CSTASK`
-
-### Removing the Container  
-To remove the stopped container:  
-`docker rm CSTASK`
-
-### Restarting the Container  
-To restart the container after stopping it:  
-`docker start CSTASK`
-
-## Contributing 🤝  
-We welcome contributions! If you want to add new features, report bugs, or improve documentation, please open an issue or submit a pull request in the [GitHub repository](https://github.com/freddyelgato/CSTASK).
-
-
-## Support 💬  
-If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/freddyelgato/CSTASK).  
-For more information, check out the [Docker Hub page](https://hub.docker.com/repository/docker/2424833f/cstask).
+## Enlaces
+- Imagen en Docker Hub: `[docker ps](https://hub.docker.com/repository/docker/2424833f/cstask)`.
+- Repositorio de GitHub: `[docker stop CSTASK](https://github.com/freddyelgato/CSTASK)`.
