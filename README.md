@@ -1,30 +1,32 @@
-# CSTASK - Aplicación "Hola Mundo" en C#
+# CSTASK - "Hello World" Application in C#
 
-Este proyecto es una simple aplicación web "Hola Mundo" creada en C# y desplegada en un contenedor Docker. Puedes ejecutarla localmente y acceder a ella en tu navegador.
+This project is a simple "Hello World" web application created in C# and deployed in a Docker container. You can run it locally and access it in your browser.
 
-## Requisitos
-- **Docker**: [Instalar Docker](https://www.docker.com/get-started) si aún no lo tienes.
+## Requirements
+- **Docker**: [Install Docker](https://www.docker.com/get-started) if you don’t have it yet.
 
-## Instrucciones de Instalación
+## Installation Instructions
 
-1. **Clona este repositorio**:
+1. **Clone this repository**:
    ```bash
    git clone https://github.com/freddyelgato/CSTASK.git
-2. **Ejecuta la aplicación en Docker**:
+
+2. **Run the application in Docker**:
    ```bash
    docker run -d -p 8080:8080 --name CSTASK 2424833f/cstask
- - **d**: Ejecuta el Contenedor en Segundo Plano.
- - **p8080**: Mapea el puerto 8080 del contenedor al puerto 8080 de tu máquina..
+ - **d**: Runs the container in detached mode.
+ - **p8080**: Maps container port 8080 to your machine's port 8080.
 
-3. **Accede a la aplicación con el Navegador para ver el Mensaje Hola Mundo**:
+3. **Access the application in your browser to see the "Hello World" message**:
    ```bash
    http://localhost:8080
    
-## Comandos Útiles
-- Ver Contenedores: `docker ps`.
-- Detener el Contenedor: `docker stop CSTASK`.
-- Eliminar el Contenedor: `docker rm CSTASK`.
+## Useful Commands
+- View containers: `docker ps`.
+- Stop the container: `docker stop CSTASK`.
+- Remove the container: `docker rm CSTASK`.
 
 ## Enlaces
-- Imagen en Docker Hub: [docker ps](https://hub.docker.com/repository/docker/2424833f/cstask).
-- Repositorio de GitHub: [docker stop CSTASK](https://github.com/freddyelgato/CSTASK).
+- Docker Hub Image: [docker ps](https://hub.docker.com/repository/docker/2424833f/cstask).
+  
+- GitHub Repository: [docker stop CSTASK](https://github.com/freddyelgato/CSTASK).
