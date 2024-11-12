@@ -29,4 +29,3 @@ This project is a simple "Hello World" web application created in C# and deploye
 ## Enlaces
 - Docker Hub Image: [docker ps](https://hub.docker.com/repository/docker/2424833f/cstask).
   
-- GitHub Repository: [docker stop CSTASK](https://github.com/freddyelgato/CSTASK).
